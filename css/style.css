@@ -1,0 +1,74 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.casino-card {
+    background: #2a2a2a;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.slot-machine {
+    margin: 20px 0;
+}
+
+.slot-result {
+    font-size: 4rem;
+    text-align: center;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.stat-card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background: #2a2a2a;
+}
+
+.spinning {
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    to { transform: scale(1); }
+}
+
+#spinButton {
+    min-width: 120px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

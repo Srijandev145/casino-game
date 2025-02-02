@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Dev Casino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎰 JavaScript Casino</a>
+            <div class="navbar-text text-light" id="playerInfo">
+                Welcome, Srijandev145 | Balance: $1000
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="casino-card">
+                    <div id="gameArea">
+                        <h2>Slot Machine</h2>
+                        <div class="slot-machine">
+                            <div class="slot-result" id="slotResult">
+                                🎰 🎰 🎰
+                            </div>
+                        </div>
+                        
+                        <div class="bet-area">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="betAmount" 
+                                       min="1" step="1" value="10">
+                                <button class="btn btn-primary" id="spinButton">SPIN! 🎰</button>
+                            </div>
+                        </div>
+
+                        <div id="resultMessage" class="alert mt-3" style="display: none;">
+                        </div>
+
+                        <div class="stats-area mt-4">
+                            <h4>Statistics</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="stat-card">
+                                        <h5>Total Bets</h5>
+                                        <p id="totalBets">$0</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-card">
+                                        <h5>Total Wins</h5>
+                                        <p id="totalWins">$0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payout-table mt-4">
+                            <h5>Payout Table:</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">🍒 x3: 3x your bet</li>
+                                        <li class="list-group-item">🍊 x3: 4x your bet</li>
+                                        <li class="list-group-item">🍇 x3: 5x your bet</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">💎 x3: 10x your bet</li>
+                                        <li class="list-group-item">💰 x3: 20x your bet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-4">
+        <div class="container text-center">
+            <p class="text-muted">Last Updated: 2025-02-02 16:10:07 UTC</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
